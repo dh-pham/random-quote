@@ -1,0 +1,39 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+
+body {
+  background: #F3BAAD;
+}
+
+.quote-page {
+  background: #F3BAAD;
+}
+
+.quote-box {
+  background: white;
+  margin: 100px 300px auto 300px;
+  padding: 30px 30px 30px 30px;
+}
+
+.quote-text {
+ 
+}
+
+.authors {
+ 
+}
+
+.btn-bar {
+  
+}
+
+#new-quote {
+  
+}
+
+.hpd {
+  
+}
+
