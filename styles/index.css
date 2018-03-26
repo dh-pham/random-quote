@@ -13,8 +13,9 @@ body {
 
 .quote-box {
   background: white;
-  margin: 100px 300px auto 300px;
-  padding: 30px 30px 30px 30px;
+  margin: 5% 5% auto 5%;
+  padding: 3% 3% 3% 3%;
+
 }
 
 .quote-text {

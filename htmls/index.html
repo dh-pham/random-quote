@@ -4,35 +4,41 @@
   
   <!--  Meta  -->
   <meta charset="UTF-8" />
-  <title>My New Pen!</title>
+  <title>Random Quotes Machine</title>
   
   <!--  Styles  -->
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <script src="https://use.fontawesome.com/9a13584896.js"></script>
   <link rel="stylesheet" href="../styles/index.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
 </head>
 <body>
   
   <div class = "quote-page">
     <div class = "quote-box">
       <div class = "container">
-        <div class = "row quote-text justify-content-center">
+        <div class = "row authors justify-content-begin">
           <i class="fa fa-quote-left"></i>
-          <span id="quoteText"></span>
+        </div>
+
+        <div class = "row quote-text justify-content-center">
+          <strong id="quoteText"></strong>
+        </div>
+
+        <div class = "row authors justify-content-end">
           <i class="fa fa-quote-right"></i>
         </div>
 
         <div class = "row authors justify-content-end">
-          <span id="quoteAuthors"></p>
+          <p id="quoteAuthors"></p>
         </div>
 
         <div class = "row btn-bar justify-content-between">
           <!--<div class = "col">-->
             <button id="tweet-quote" title="Tweet this quote!">
               <a href = "https://twitter.com/login?lang=en">
-                <i class="fas fa-share-alt"> Twitter</i>
+                <i class="fa fa-twitter"> Twitter</i>
               </a>
             </button>
           <!--</div>-->

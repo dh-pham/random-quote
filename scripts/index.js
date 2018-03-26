@@ -18,14 +18,22 @@ function randomQuote() {
     // },
     success: function(data) {
       console.log(data);
-      $("#quoteText").html("<p>" + data.quoteText + "</p>");
-      $("#quoteAuthors").html("<p>" + " -" + data.quoteAuthor + "</p>");
+      $("#quoteText").text(data.quoteText);
+      $("#quoteAuthors").text(data.quoteAuthor);
     }
   });
 }
 
 $(document).ready(function() {
   $("#new-quote").on("click", randomQuote);
+
+  $("#tweet-quote").on('click', function(event) {
+    event.preventDefault(); 
+    window.open("https://twitter.com/intent/tweet?text=" + "\"" 
+      + $("#quoteText").text() + "\""
+      + $("#quoteAuthor").text()
+      );
+  });
 });
 
 randomQuote();
