@@ -5,16 +5,13 @@
 
 function randomQuote() {
   $.ajax( {
-    url: "https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en",
+    url: "https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en",
     jsonp: 'jsonp',
     dataType: 'jsonp',
-    data: {
-      method: 'getQuote',
-      lang: 'en',
-      format: 'jsonp'
-    },
-    // jsonpCallback: function(data) {
-    //   document.querySelector("#text").html(data);
+    // data: {
+    //   method: 'getQuote',
+    //   lang: 'en',
+    //   format: 'jsonp'
     // },
     success: function(data) {
       console.log(data);
@@ -29,9 +26,9 @@ $(document).ready(function() {
 
   $("#tweet-quote").on('click', function(event) {
     event.preventDefault(); 
-    window.open("https://twitter.com/intent/tweet?text=" + "\"" 
+    window.open("https://twitter.com/intent/tweet?status=" + "\"" 
       + $("#quoteText").text() + "\""
-      + $("#quoteAuthor").text()
+      + $("#quoteAuthor").text(), '_blank'
       );
   });
 });
